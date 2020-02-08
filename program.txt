@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+class Abundant
+{
+public static void main(String[] args)
+{
+int i,n,sum=0,m;
+System.out.println("enter a number");
+Scanner s=new Scanner(System.in);
+n=s.nextInt();
+m=n;
+for(i=1;i<=n-1;i++)
+{
+if(n%i==0)
+{
+System.out.println(+i);
+sum=sum+i;
+}
+}
+if(sum>m)
+{
+System.out.println("abumdant number");
+}
+else
+{
+System.out.println("not abumdant number");
+}
+}
+}
